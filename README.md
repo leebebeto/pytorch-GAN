@@ -7,6 +7,15 @@ Pytorch implementation for Computer Vision and NLP
 
 ## Image Classification
 
+### [AlexNET](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/image-classification/alexnet/main.py)
+
+![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/image-classification/alexnet/model-architecture.png)
+
+
+### [VggNET](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/image-classification/Vggnet/main.py)
+
+![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/image-classification/Vggnet/model-architecture.png)
+
 ## Generative Models
 
 ### [Variational Auto Encoders](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/VAE/main.py)
