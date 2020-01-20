@@ -10,8 +10,13 @@ Pytorch implementation for Computer Vision and NLP
 
 ![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/image-classification/alexnet/model-architecture.png)
 
+From: https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
 
 ### [VggNET](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/image-classification/Vggnet/main.py)
+
+![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/image-classification/Vggnet/model-architecture.png)
+
+From: https://arxiv.org/pdf/1409.1556.pdf
 
 ## Generative Models
 
@@ -35,3 +40,7 @@ Condition: giving certain numbers as conditions
 ### [Deep-Convolutional Generative Adversarial Networks (DCGAN)](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/main_mnist.py)
 
 ![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/result.gif)
+
+
+# NLP
+
