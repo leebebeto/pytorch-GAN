@@ -44,3 +44,7 @@ Condition: giving certain numbers as conditions
 
 # NLP
 
+### [TF-IDF](https://github.com/leebebeto/pytorch-implementation/blob/master/NLP/tf-idf/main.py)
+
+### [Word2Vec (Skip-gram & CBOW)](https://github.com/leebebeto/pytorch-implementation/blob/master/NLP/word2vec(SG,CBOW)/main.py)
+
