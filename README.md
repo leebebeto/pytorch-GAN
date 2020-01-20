@@ -1,7 +1,6 @@
 Pytorch implementation for Computer Vision and NLP
 ===================================================
 
-(To be updated...)
 
 # Computer Vision
 
@@ -13,8 +12,6 @@ Pytorch implementation for Computer Vision and NLP
 
 
 ### [VggNET](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/image-classification/Vggnet/main.py)
-
-![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/image-classification/Vggnet/model-architecture.png)
 
 ## Generative Models
 
