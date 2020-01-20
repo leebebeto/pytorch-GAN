@@ -14,7 +14,7 @@ From: https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convol
 
 ### [VggNET](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/image-classification/Vggnet/main.py)
 
-![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/image-classification/Vggnet/model-architecture.png) {height=15%}
+![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/image-classification/Vggnet/model-architecture.png)
 
 From: https://arxiv.org/pdf/1409.1556.pdf
 
