@@ -48,3 +48,13 @@ Condition: giving certain numbers as conditions
 
 ### [Word2Vec (Skip-gram & CBOW)](https://github.com/leebebeto/pytorch-implementation/blob/master/NLP/word2vec(SG,CBOW)/main.py)
 
+Some of the codes were given by my TAs: irish07@korea.ac.kr & saga9017@korea.ac.kr
+
+### [Seq2seq)](https://github.com/leebebeto/pytorch-implementation/blob/master/NLP/seq2seq/main.py)
+
+I referred to some codes from the pytorch tutorial: https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html
+
+### [News Classification)](https://github.com/leebebeto/pytorch-implementation/blob/master/NLP/news-classification/main.py)
+
+### [Text Classification with CNN)](https://github.com/leebebeto/pytorch-implementation/blob/master/NLP/text-classification-with-cnn/main.py)
+
