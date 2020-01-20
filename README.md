@@ -9,21 +9,23 @@ Pytorch implementation for Computer Vision and NLP
 
 ## Generative Models
 
-### Variational Auto Encoders
+### [Variational Auto Encoders][https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/VAE/main.py] 
 
 ![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/VAE/result.gif)
 
-### Generative Adversarial Networks
+### [Generative Adversarial Networks][https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/GAN/main.py] 
 
 ![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/GAN/result.gif)
 
 
-### Conditional Generative Adversarial Networks (cGAN)
+### [Conditional Generative Adversarial Networks (cGAN)][https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/CGAN/main.py]
 
 ![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/CGAN/result.gif)
 
+Condition: giving certain numbers as conditions
+
 ![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/CGAN/final-test-image.png)
 
-### Deep-Convolutional Generative Adversarial Networks (DCGAN)
+### [Deep-Convolutional Generative Adversarial Networks (DCGAN)][https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/main_mnist.py]
 
 ![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/result.gif)
