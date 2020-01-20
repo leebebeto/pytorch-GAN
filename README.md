@@ -7,4 +7,4 @@ Pytorch implementation for Computer Vision and NLP
 
 ### Generative Adversarial Networks
 
-![Alt text](/Computer-vision/generative-model/result.gif)
+![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/GAN/result.gif)
