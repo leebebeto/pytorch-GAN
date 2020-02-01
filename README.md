@@ -33,7 +33,7 @@ From: https://arxiv.org/pdf/1409.1556.pdf
 
 |   |   |
 |---|---|
-| Random gif | Giving certain numbers | 
+| Random gif | Certain numbers | 
 | ![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/CGAN/result.gif) |  ![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/CGAN/final-test-image.png) |
 
 
