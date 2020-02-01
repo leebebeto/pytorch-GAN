@@ -37,10 +37,10 @@ Condition: giving certain numbers as conditions
 
 ![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/CGAN/final-test-image.png)
 
-### [Deep-Convolutional Generative Adversarial Networks (DCGAN)](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/main_mnist.py)
+### [Deep-Convolutional Generative Adversarial Networks (DCGAN) - MNIST](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/main_mnist.py)
 
 
-### [Deep-Convolutional Generative Adversarial Networks (DCGAN)](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/main_cifar.py)
+### [Deep-Convolutional Generative Adversarial Networks (DCGAN) - CIFAR10](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/main_cifar.py)
 
 
 |   |   |   |   | 
