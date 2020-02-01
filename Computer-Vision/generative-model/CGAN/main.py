@@ -35,10 +35,10 @@ print(args)
 os.makedirs('generated-images', exist_ok = True)
 
 # setting data
-train_loader = torch.utils.data.DataLoader(datasets.MNIST('../../data', train= True, download = True, transform = transforms.ToTensor()),
+train_loader = torch.utils.data.DataLoader(datasets.MNIST('data', train= True, download = True, transform = transforms.ToTensor()),
 	batch_size = args.batch_size, shuffle = True)
 
-test_loader = torch.utils.data.DataLoader(datasets.MNIST('../../data', train= False, transform = transforms.ToTensor()), shuffle = True)
+test_loader = torch.utils.data.DataLoader(datasets.MNIST('data', train= False, transform = transforms.ToTensor()), shuffle = True)
 
 
 class Generator(nn.Module):
