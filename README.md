@@ -31,11 +31,18 @@ From: https://arxiv.org/pdf/1409.1556.pdf
 
 ### [Conditional Generative Adversarial Networks (cGAN)](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/CGAN/main.py)
 
-![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/CGAN/result.gif)
+|   |   |
+|---|---|
+|  Random gif  |  Giving certain numbers as conditions  | 
+| ![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/CGAN/result.gif) |  ![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/CGAN/final-test-image.png) |
 
-Condition: giving certain numbers as conditions
 
-![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/CGAN/final-test-image.png)
+
+
+
+<!-- Condition: giving certain numbers as conditions -->
+
+
 
 ### [Deep-Convolutional Generative Adversarial Networks (DCGAN) - MNIST](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/main_mnist.py)
 
