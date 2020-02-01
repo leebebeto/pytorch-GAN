@@ -40,7 +40,7 @@ Condition: giving certain numbers as conditions
 ### [Deep-Convolutional Generative Adversarial Networks (DCGAN)](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/main_mnist.py)
 
 
-### [Deep-Convolutional Generative Adversarial Networks (DCGAN)](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/main_mnist.py)
+### [Deep-Convolutional Generative Adversarial Networks (DCGAN)](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/main_cifar.py)
 
 
 |   |   |   |   | 
