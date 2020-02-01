@@ -43,7 +43,7 @@ Condition: giving certain numbers as conditions
 ### [Deep-Convolutional Generative Adversarial Networks (DCGAN)](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/main_mnist.py)
 
 
-|   |   |   |   | 
+
 |---|---|---|---|
 |  MNIST  |  CIFAR10 - dog  |  CIFAR10 - bird  |  CIFAR10 - airplane  | 
 | ![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/result.gif) |  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/dog.png" width=100> |  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/bird.png" width=100> | <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/airplane.png" width=100> |
