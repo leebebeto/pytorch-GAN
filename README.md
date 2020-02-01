@@ -46,7 +46,7 @@ Condition: giving certain numbers as conditions
 |   |   |   |   | 
 |---|---|---|---|
 |  MNIST  |  CIFAR10 - dog  |  CIFAR10 - bird  |  CIFAR10 - airplane  | 
-| ![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/result.gif) |  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/dog.png"> |  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/bird.png"> | <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/airplane.png"> |
+| ![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/result.gif) |  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/dog.png" width=120> |  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/bird.png" width=120> | <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/DCGAN/airplane.png" width=120> |
 
 
 ### [CycleGAN](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/CycleGAN/main.py)
