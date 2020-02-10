@@ -37,6 +37,9 @@ From: https://arxiv.org/pdf/1409.1556.pdf
 | ![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/CGAN/result.gif) |  ![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/CGAN/final-test-image.png) |
 
 
+### [Conditional Image Synthesis with Auxiliary Classifier GANs (ACGAN)](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/ACGAN/main.py)
+
+![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/ACGAN/result.gif) 
 
 
 
