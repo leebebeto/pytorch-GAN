@@ -61,7 +61,13 @@ From: https://arxiv.org/pdf/1409.1556.pdf
 
 ### [CycleGAN](https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/CycleGAN/main.py)
 
-Currently working on...
+|   |   |   |   | 
+|---|---|---|---|
+|  Vangogh (original)  |  Picture (original)  |  Vangogh2Picture  |  Picture2Vangogh  | 
+|  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/Cyclegan/van_1.png" width=120> |  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/Cyclegan/pic_1.png" width=120> |  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/Cyclegan/van2pic_1.png" width=120> | <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/Cyclegan/pic2van_1.png" width=120> |  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/Cyclegan/van_2.png" width=120> |  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/Cyclegan/pic_2.png" width=120> |  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/Cyclegan/van2pic_2.png" width=120> | <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/Computer-Vision/generative-model/Cyclegan/pic2van_2.png" width=120> |
+
+
+
 
 # NLP
 
