@@ -16,10 +16,10 @@ import os
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # setting args
-batch_size = 512
+batch_size = 32
 epoch = 150
-learning_rate_g = 0.002
-learning_rate_d = 0.002
+learning_rate_g = 0.0002
+learning_rate_d = 0.0002
 b1 = 0.5
 b2 = 0.999
 latent_vector = 100
@@ -37,10 +37,10 @@ transforms_ = transforms.Compose([
 
 
 # setting data
-train_loader = torch.utils.data.DataLoader(datasets.CIFAR10('../../data', train= True, download = True, transform = transforms.ToTensor()),
+train_loader = torch.utils.data.DataLoader(datasets.CIFAR10('data', train= True, download = True, transform = transforms.ToTensor()),
 	batch_size = batch_size, shuffle = True)
 
-test_loader = torch.utils.data.DataLoader(datasets.CIFAR10('../../data', train= False, transform = transforms.ToTensor()), shuffle = True)
+test_loader = torch.utils.data.DataLoader(datasets.CIFAR10('data', train= False, transform = transforms.ToTensor()), shuffle = True)
 
 
 class Generator(nn.Module):
@@ -72,9 +72,9 @@ class Generator(nn.Module):
 	def forward(self, data):
 		x = self.layer1(data)
 		x = self.layer2(x)
-		x = self.layer2(x)
 		x = self.layer3(x)
 		x = self.layer4(x)
+		x = self.layer5(x)
 
 		return x
 
@@ -94,7 +94,7 @@ class Discriminator(nn.Module):
 					  nn.LeakyReLU(0.2, inplace = True))
 
 
-		self.layer4 = nn.Sequential(nn.Conv2d(out_nc*4 out_nc*8,kernel_size = 4, stride = 2, padding = 1, bias= False),
+		self.layer4 = nn.Sequential(nn.Conv2d(out_nc*4, out_nc*8,kernel_size = 4, stride = 2, padding = 1, bias= False),
 					  nn.BatchNorm2d(out_nc * 8),
 					  nn.LeakyReLU(0.2, inplace = True))
 
@@ -108,6 +108,7 @@ class Discriminator(nn.Module):
 		x = self.layer2(x)
 		x = self.layer3(x)
 		x = self.layer4(x)
+		x = x.view(x.shape[0], -1)
 		x = self.layer5(x)
 		x = self.sigmoid(x)
 		return x
