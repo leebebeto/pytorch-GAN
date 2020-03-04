@@ -37,7 +37,7 @@ Pytorch implementation for GAN
 |---|---|---|
 |  MNIST  |  CIFAR10 - dog  |  CIFAR10 - bird  |
 | ![Alt text](https://github.com/leebebeto/pytorch-implementation/blob/master/GAN/DCGAN/result.gif) |  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/GAN/DCGAN/dog.png" width=120> |  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/GAN/DCGAN/bird.png" width=120> | 
-| CIFAR10 - airplane  |  CIFAR10 - cat  |  CIFAR10 - automobile  | 
+| CIFAR10 - airplane  |  CIFAR10 - cat  | CIFAR10-automobile  | 
 |<img src="https://github.com/leebebeto/pytorch-implementation/blob/master/GAN/DCGAN/airplane.png" width=120> | <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/GAN/DCGAN/cat.png" width=120> | <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/GAN/DCGAN/automobile.png" width=120> |
 
 
