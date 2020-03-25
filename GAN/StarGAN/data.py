@@ -27,7 +27,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 class CelebADataset(Dataset):
 
 	def __init__(self, data_path, transforms_, mode):
-		attributes = ['Black_Hair', 'Blond_Hair', 'Brown_Hair', 'Male', 'Young', 'Wearing_Hat', 'Bald']
+		attributes = ['Black_Hair', 'Blond_Hair', 'Brown_Hair', 'Male', 'Young']
 		self.image_path = os.getcwd() + '/' + data_path + '/images/'
 		self.image_list = os.listdir(self.image_path)
 		attr_file = os.getcwd() + '/' + data_path + '/list_attr_celeba.txt'

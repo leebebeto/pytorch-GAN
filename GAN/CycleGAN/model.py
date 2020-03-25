@@ -43,7 +43,9 @@ class Generator(nn.Module):
 		super(Generator,self).__init__()
 
 
-		self.down_layer1 = nn.Sequential(nn.Conv2d(3, out_nc, kernel_size =7, padding = 1),
+		self.down_layer1 = nn.Sequential(
+									nn.ReflectionPad2d(3),
+									nn.Conv2d(3, out_nc, kernel_size =7),
 									nn.InstanceNorm2d(out_nc),
 									nn.ReLU(inplace = True))
 		self.down_layer2 = nn.Sequential(nn.Conv2d(out_nc, out_nc * 2, kernel_size =3, stride = 2, padding = 1),
@@ -68,7 +70,6 @@ class Generator(nn.Module):
 									nn.ReflectionPad2d(3),
 									nn.Conv2d(out_nc , 3, kernel_size =7),
 									nn.Tanh())
-		self.padding = nn.ZeroPad2d((2,2,2,2))
 
 		self.residual_block = ResidualBlock(256).to(device)
 
@@ -78,15 +79,11 @@ class Generator(nn.Module):
 		x = self.down_layer1(data)
 		x = self.down_layer2(x)
 		x = self.down_layer3(x)
-
 		for i in range(9):
 			x = self.residual_block(x)
-
 		x = self.up_layer1(x)
 		x = self.up_layer2(x)
 		x = self.up_layer3(x)
-		x = self.padding(x)
-		x = self.tanh(x)
 		return x
 
 class Discriminator(nn.Module):

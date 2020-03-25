@@ -42,8 +42,8 @@ parser.add_argument("--recon_lambda", type= float, default=10.0, help="recon lam
 parser.add_argument("--cls_lambda", type= float, default=1.0, help="cls lambda")
 parser.add_argument("--gp_lambda", type= float, default=10.0, help="gp lambda")
 parser.add_argument("--n_residual_blocks", type=int, default=6, help="number of residual blocks")
-parser.add_argument("--n_attribute", type=int, default=7, help="number of attributes")
-parser.add_argument("--n_domain", type=int, default=7, help="number of domains")
+parser.add_argument("--n_attribute", type=int, default=5, help="number of attributes")
+parser.add_argument("--n_domain", type=int, default=5, help="number of domains")
 parser.add_argument("--out_nc", type=int, default=64, help="number of output channels")
 
 args = parser.parse_args()
@@ -194,16 +194,14 @@ for epoch in range(args.epoch):
 			with torch.no_grad():
 				original = image[0]
 				orig_attr = attr[0]
-				fake1 = generator(original.unsqueeze(0), torch.FloatTensor([(orig_attr[0] + 1) % 2,0,0,0,0,0,0]).unsqueeze(0).to(device))
-				fake2 = generator(original.unsqueeze(0), torch.FloatTensor([0,(orig_attr[1] + 1) % 2,0,0,0,0,0]).unsqueeze(0).to(device))	
-				fake3 = generator(original.unsqueeze(0), torch.FloatTensor([0,0, (orig_attr[2] + 1) % 2,0,0,0,0]).unsqueeze(0).to(device))
-				fake4 = generator(original.unsqueeze(0), torch.FloatTensor([0,0,0,(orig_attr[3] + 1) % 2,0,0,0]).unsqueeze(0).to(device))
-				fake5 = generator(original.unsqueeze(0), torch.FloatTensor([0,0,0,0,(orig_attr[4] + 1) % 2,0,0]).unsqueeze(0).to(device))
-				fake6 = generator(original.unsqueeze(0), torch.FloatTensor([0,0,0,0,0,(orig_attr[3] + 1) % 2,0]).unsqueeze(0).to(device))
-				fake7 = generator(original.unsqueeze(0), torch.FloatTensor([0,0,0,0,0,0,(orig_attr[4] + 1) % 2]).unsqueeze(0).to(device))
+				fake1 = generator(original.unsqueeze(0), torch.FloatTensor([(orig_attr[0] + 1) % 2,0,0,0,0]).unsqueeze(0).to(device))
+				fake2 = generator(original.unsqueeze(0), torch.FloatTensor([0,(orig_attr[1] + 1) % 2,0,0,0]).unsqueeze(0).to(device))	
+				fake3 = generator(original.unsqueeze(0), torch.FloatTensor([0,0, (orig_attr[2] + 1) % 2,0,0]).unsqueeze(0).to(device))
+				fake4 = generator(original.unsqueeze(0), torch.FloatTensor([0,0,0,(orig_attr[3] + 1) % 2,0]).unsqueeze(0).to(device))
+				fake5 = generator(original.unsqueeze(0), torch.FloatTensor([0,0,0,0,(orig_attr[4] + 1) % 2]).unsqueeze(0).to(device))
 			
 	
-			result = torch.cat((original, fake1.squeeze(0), fake2.squeeze(0), fake3.squeeze(0), fake4.squeeze(0), fake5.squeeze(0), fake6.squeeze(0), fake7.squeeze(0)), 1)
+			result = torch.cat((original, fake1.squeeze(0), fake2.squeeze(0), fake3.squeeze(0), fake4.squeeze(0), fake5.squeeze(0)), 1)
 			save_image(result, 'result/%d_%d.png' % (epoch, i), normalize = True)	
 
 

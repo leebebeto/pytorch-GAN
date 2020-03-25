@@ -29,8 +29,8 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 parser = argparse.ArgumentParser(description = "Cycle GAN")
 parser.add_argument('--batch_size', type = int, default =1, help = "batch_size")
 parser.add_argument('--epoch', type = int, default = 200, help = "epoch")
-parser.add_argument('--d_learning_rate', type = float, default = 0.00001, help = "learning_rate")
-parser.add_argument('--g_learning_rate', type = float, default = 0.00001, help = "learning_rate")
+parser.add_argument('--d_learning_rate', type = float, default = 0.00002, help = "learning_rate")
+parser.add_argument('--g_learning_rate', type = float, default = 0.00002, help = "learning_rate")
 parser.add_argument("--b1", type=float, default=0.5, help="adam: decay of first order momentum of gradient")
 parser.add_argument("--b2", type=float, default=0.999, help="adam: decay of first order momentum of gradient")
 parser.add_argument("--latent_vector", type=int, default=100, help="latent dimension")
@@ -135,7 +135,7 @@ for epoch in range(args.epoch):
 		d_B_optimizer.step()
 
 		
-		d_loss = d_A_loss + d_B_loss
+		d_loss = 0.5 * (d_A_loss + d_B_loss)
 
 		total_loss = d_loss + g_loss
 		if i % 20 == 0:	
