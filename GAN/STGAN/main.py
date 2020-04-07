@@ -184,28 +184,7 @@ for epoch in range(args.epoch):
 		if i % 20 == 0:	
 			print('Epoch [{}/{}], Step [{}/{}], Loss:{:.4f}, G-Loss: {:.4f}, G-ADV-Loss:{:.4f}, G-CLS-Loss:{:.4f}, G-Recon-Loss:{:.4f}, D-Loss: {:.4f}, D-ADV-Loss:{:4f}, D-CLS-Loss:{:4f} '.format(epoch+1, args.epoch, i, int(len(train_loader)), total_loss.item(), loss_g.item(), loss_g_adv.item(), loss_g_cls.item(), loss_g_recon.item(), loss_d.item(), loss_d_adv.item(), loss_d_cls.item()))
 			original = image[:16]
-			fake = generated_image[:16]
-
-
-#			with torch.no_grad():
-#				original = image[:4]
-#				plot_list = []
-#				for index in range(original.shape[0]):
-#					plot_list.append(original[index])
-#					attr_list = torch.stack([onehot(i) for i in range(10)]).to(device)
-#					for attr in attr_list:
-#						fake = generator(original[index].unsqueeze(0), attr)
-#						plot_list.append(fake.squeeze(0))
-#				plot_list = torch.stack(plot_list)
-				#attr = attr[:16]
-
-				#fake1 = generator(original.unsqueeze(0), torch.FloatTensor([(orig_attr[0] + 1) % 2,0,0,0,0]).unsqueeze(0).to(device))
-				#fake2 = generator(original.unsqueeze(0), torch.FloatTensor([0,(orig_attr[1] + 1) % 2,0,0,0]).unsqueeze(0).to(device))	
-				#fake3 = generator(original.unsqueeze(0), torch.FloatTensor([0,0, (orig_attr[2] + 1) % 2,0,0]).unsqueeze(0).to(device))
-				#fake4 = generator(original.unsqueeze(0), torch.FloatTensor([0,0,0,(orig_attr[3] + 1) % 2,0]).unsqueeze(0).to(device))
-				#fake5 = generator(original.unsqueeze(0), torch.FloatTensor([0,0,0,0,(orig_attr[4] + 1) % 2]).unsqueeze(0).to(device))
-			
-	
+			fake = generated_image[:16]	
 			result  = torch.cat((original, fake), 0)
 			save_image(result, 'result/%d_%d.png' % (epoch, i), nrow =16, normalize = True)	
 
