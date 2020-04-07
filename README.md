@@ -66,4 +66,11 @@ Pytorch implementation for GAN
 |  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/GAN/StarGAN/assets/7_original.png" width=120> |  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/GAN/StarGAN/assets/7_black.png" width=120> | <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/GAN/StarGAN/assets/7_blonde.png" width=120>| <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/GAN/StarGAN/assets/7_brown.png" width=120>| <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/GAN/StarGAN/assets/7_male.png" width=120>|  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/GAN/StarGAN/assets/7_young.png" width=120>|  
 
 
+### [STGAN](https://github.com/leebebeto/pytorch-implementation/blob/master/GAN/STGAN/main.py)
 
+|   |   |
+|---|---|
+|  Original  |  To Male  |
+|  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/GAN/STGAN/assets/1_original.png" width=120> |  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/GAN/STGAN/assets/1_male.png" width=120> | 
+|  Original  |  To Male, To Mustache  |
+|  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/GAN/STGAN/assets/2_original.png" width=120> |  <img src="https://github.com/leebebeto/pytorch-implementation/blob/master/GAN/STGAN/assets/2_male_must.png" width=120> | 
